@@ -731,7 +731,6 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
 
   padding: 63px 24px;
   margin: 0;
@@ -739,14 +738,15 @@ img {
   line-height: 1.56;
   color: var(--title-second-color);
 
-  transition: 250ms ease-in-out;
+  transform: translateY(100%);
+
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color, color;
+  transition-property: transform, background-color, color;
 }
 
 .box:hover .img-content {
   transform: translateY(0);
-  transition: 250ms ease-in-out;
 }
 
 .title-card {
