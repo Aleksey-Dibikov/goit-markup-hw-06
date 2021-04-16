@@ -373,12 +373,37 @@
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
+        <div class="modal">            
             <button class="modal-button" data-modal-close>
                 <svg class="icon">
                     <use href="./images/icons-svg/modal/sprite.svg#icon-close-black"></use>
                 </svg>
             </button>
+            <legend class="title-modal">Оставьте свои данные, мы вам перезвоним</legend>
+            <form class="modal-form">
+                <label class="title-label" for="user-name">Имя</label>
+                <input type="text" name="name" id="user-name">
+               
+                <label class="title-label" for="user-phone">Телефон</label>
+                <input type="tel" name="phone" id="user-phone">
+
+                <label class="title-label" for="user-mail">Почта</label>
+                <input type="email" name="e-mail" id="user-mail">
+
+                <label class="title-label" for="feedback">Комментарий</label>
+                <textarea 
+                name="feedback" id="feedback" 
+                cols="31" rows="8" 
+                placeholder="Введите текст"></textarea>
+
+                <label class="modal-mailing">
+                    <input type="checkbox" name="mailing" value="mailing" checked>
+                    Соглашаюсь с рассылкой и принимаю
+                    <a href="">Условия договора</a>
+                </label>
+
+                <button class="button-send" type="submit">Отправить</button>
+            </form>
         </div>
     </div>
 
