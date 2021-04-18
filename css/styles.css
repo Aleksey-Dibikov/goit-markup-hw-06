@@ -317,11 +317,13 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: currentColor;
 }
 
 .modal-button .icon {
@@ -370,6 +372,7 @@ img {
   width: 448px;
   height: 40px;
   padding-left: 42px;
+  outline: currentColor;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -404,6 +407,7 @@ img {
   padding: 12px 16px;
   margin-bottom: 20px;
   resize: none;
+  outline: currentColor;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
