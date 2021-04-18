@@ -359,7 +359,7 @@
             </section>
             <section class="footer-section">
                 <h3 class="title-heading">Подпишитесь на рассылку</h3>
-                <form class="form">
+                <form class="form-footer">
                     <input type="email" class="form-input" name="e-mail" placeholder="E-mail">
                     <button class="form-button" type="submit">
                         Подписаться
@@ -380,15 +380,39 @@
                 </svg>
             </button>
             <legend class="title-modal">Оставьте свои данные, мы вам перезвоним</legend>
-            <form class="modal-form">
-                <label class="title-label" for="user-name">Имя</label>
-                <input type="text" name="name" id="user-name">
+            <form class="modal-form-window">
+                
+                <div class="modal-form">
+                    <label class="title-label" for="user-name">Имя</label>
+                    <input class="modal-input" type="text" name="name" id="user-name">
+                    <span class="icon-modal-form">
+                        <svg class="icon">
+                            <use href="./images/icons-svg/modal/sprite.svg#icon-person-black"></use>
+                        </svg>
+                    </span>
+                </div>
                
-                <label class="title-label" for="user-phone">Телефон</label>
-                <input type="tel" name="phone" id="user-phone">
+                <div class="modal-form">
+                    <label class="title-label" for="user-phone">Телефон</label>
+                    <input class="modal-input" type="tel" name="phone" id="user-phone">
+                    <span class="icon-modal-form">
+                        <svg class="icon">
+                            <use href="./images/icons-svg/modal/sprite.svg#icon-phone-black"></use>
+                        </svg>
+                    </span>
+                </div>
+                
 
-                <label class="title-label" for="user-mail">Почта</label>
-                <input type="email" name="e-mail" id="user-mail">
+                <div class="modal-form">
+                    <label class="title-label" for="user-mail">Почта</label>
+                    <input class="modal-input" type="email" name="e-mail" id="user-mail">
+                    <span class="icon-modal-form">
+                        <svg class="icon">
+                            <use href="./images/icons-svg/modal/sprite.svg#icon-email-black"></use>
+                        </svg>
+                    </span>
+                </div>
+                
 
                 <label class="title-label" for="feedback">Комментарий</label>
                 <textarea 
@@ -396,11 +420,25 @@
                 cols="31" rows="8" 
                 placeholder="Введите текст"></textarea>
 
-                <label class="modal-mailing">
-                    <input type="checkbox" name="mailing" value="mailing" checked>
-                    Соглашаюсь с рассылкой и принимаю
-                    <a href="">Условия договора</a>
-                </label>
+                <!-- <div class="modal-form">
+                    <label class="modal-mailing">Соглашаюсь с рассылкой и принимаю <a class="link-contract" href="">Условия
+                            договора</a></label>
+                    <span class="icon-check">
+                        <svg class="icon">
+                            <use href="./images/icons-svg/modal/sprite.svg#icon-icon-check"></use>
+                        </svg>
+                    </span>
+                </div> -->
+
+                <div class="modal-form">
+                    <label class="modal-mailing">
+                        <input class="checkbox" type="checkbox" name="mailing" value="mailing" checked>                        
+                        <span class="icon-check">
+                            Соглашаюсь с рассылкой и принимаю <a class="link-contract" href="">Условия договора</a>
+                        </span>                        
+                    </label>                    
+                </div>
+                
 
                 <button class="button-send" type="submit">Отправить</button>
             </form>
