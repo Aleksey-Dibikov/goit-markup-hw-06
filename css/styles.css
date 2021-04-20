@@ -436,6 +436,7 @@ img {
 .modal-mailing {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .checkbox {
